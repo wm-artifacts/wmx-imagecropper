@@ -1,0 +1,44 @@
+{
+  "name": "imagecropper",
+  "displayName": "Image Cropper",
+  "description": "A simple image cropper component for React Native using expo-image-cropper and expo-image-manipulator. Supports rectangular cropping with cancel functionality.",
+  "iconUrl": "icon.svg",
+  "webSupport": true,
+  "props": {
+    "imageUri": {
+      "name": "imageUri",
+      "displayName": "Image URI",
+      "description": "The URI of the image to crop.",
+      "type": "string",
+      "isRequired": true
+    },
+    "aspect": {
+      "name": "aspect",
+      "displayName": "Aspect Ratio",
+      "description": "Aspect ratio for cropping (e.g., [1,1] for square).",
+      "type": "object",
+      "isList": true
+    },
+    "style": {
+      "name": "style",
+      "displayName": "Style",
+      "description": "Custom style for the cropper container.",
+      "type": "object"
+    }
+  },
+  "events": {
+    "onCrop": {
+      "name": "onCrop",
+      "displayName": "On Crop",
+      "description": "Callback when cropping is done. Returns the cropped image URI.",
+      "type": "object"
+    },
+    "onCancel": {
+      "name": "onCancel",
+      "displayName": "On Cancel",
+      "description": "Callback when the cancel button is pressed.",
+      "type": "object"
+    }
+  },
+  "styles": {}
+} 
